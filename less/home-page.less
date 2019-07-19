@@ -11,19 +11,56 @@
     p {
       padding:0 15px;
     }
+
+    img{
+      
+      //mobile
+      @media @phone{
+        width:100%;
+          
+      }//media
+    }//main-img
   
-  }
+  }//inmtro
+
+  //mobile
+  @media @phone{
+    width:90%;
+      
+  }//media
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    
+    .sky{
+      @media @phone{
+        display: none;
+          
+      }//media
+      
+    }
+    .launch{
+      @media @phone{
+        display: none;
+          
+      }//media
+    }
+
+
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone{
+        height: 400px;
+        width: 400px;
+          
+      }//media
     }
   }
 
