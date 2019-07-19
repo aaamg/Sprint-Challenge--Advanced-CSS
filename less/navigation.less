@@ -4,29 +4,34 @@
 
 .topBar{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    //align-content: center;
-    //align-content: center;
+    align-content: center;
+    flex-wrap: wrap;
     height: 100px;
     width: 100%;
     background-color: @wild-sand;
      .border1();
 
      .title{
-        justify-content: center;
-         align-items: center;
+        //justify-content: center;
+        //align-items: center;
+        font-size: 3rem;
+        .border4();
+        margin-bottom: 20px;
      }
 
      .navBar{
         justify-content: space-around;
-         align-items: center;
+         //align-items: center;
          .border2();
+         width: 35%;
 
          a{
              text-decoration: none;
              color: @shuttle-gray;
              font-family: @river-bend;
+             font-size: 1.5rem;
              .border3();
          }
      }

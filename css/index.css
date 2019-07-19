@@ -162,26 +162,30 @@ p {
 }
 .topBar {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
   height: 100px;
   width: 100%;
   background-color: #F6F6F6;
   border: 2px solid red;
 }
 .topBar .title {
-  justify-content: center;
-  align-items: center;
+  font-size: 3rem;
+  border: 2px solid yellow;
+  margin-bottom: 20px;
 }
 .topBar .navBar {
   justify-content: space-around;
-  align-items: center;
   border: 2px solid blue;
+  width: 35%;
 }
 .topBar .navBar a {
   text-decoration: none;
   color: #5E6164;
   font-family: #454A59;
+  font-size: 1.5rem;
   border: 2px solid green;
 }
 footer {
@@ -242,6 +246,10 @@ footer {
   color: white;
   height: 40px;
   border-radius: 10px;
+}
+.home .walk .walk-text .btn button:hover {
+  background-color: white;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
