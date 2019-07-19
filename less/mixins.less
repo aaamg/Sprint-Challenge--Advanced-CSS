@@ -1,1 +1,27 @@
 // Mixins Here
+
+.border1(){
+    border: 2px solid red;
+}
+.border2(){
+    border: 2px solid blue;
+}
+.border3(){
+    border: 2px solid green;
+}
+.border4(){
+    border: 2px solid yellow;
+}
+
+.button1(@bg-color:@btn-bg-color, @width:100px, @font:white){
+    background-color: @bg-color;
+    width: @width;
+    color:@font;
+    height: 40px;
+    border-radius: 10px;
+
+    &:hover{
+        background-color:@font;
+        color:@bg-color; 
+      }
+   }
